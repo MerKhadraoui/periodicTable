@@ -3,7 +3,44 @@
   margin: 0;
   padding: 0;
 }
-/* table {
-  background-color: thistle;
-  border: 5px solid black;
-} */
+table {
+  background-color: white;
+  width: 40rem;
+  height: 20rem;
+  position: absolute;
+}
+
+tr:nth-child(n + 8) :nth-child(n + 2) {
+  background-color: rgb(16, 97, 16);
+}
+tr:nth-child(n + 4) :nth-child(n + 12) {
+  background-color: white;
+}
+tr:nth-child(n + 4) :nth-child(n + 2) {
+  background-color: rgb(16, 97, 16);
+}
+tr:nth-child(n + 4) :nth-child(n + 12) {
+  background-color: white;
+}
+tr:nth-child(n + 8) :nth-child(n) {
+  background-color: white;
+}
+
+tr:nth-child(n + 6) :nth-child(-n + 3):nth-child(n + 3) {
+  background-color: rgb(104, 186, 192);
+}
+tr:nth-child(n + 7) :nth-child(-n + 3):nth-child(n + 3) {
+  background-color: rgb(22, 119, 126);
+}
+tr:nth-child(-n + 7) :nth-child(-n + 2):nth-child(-n + 3) {
+  background-color: rgba(223, 187, 146, 0.808);
+}
+tr:nth-child(-n + 1) :nth-child(-n + 2):nth-child(-n + 3) {
+  background-color: white;
+}
+tr:nth-child(-n + 7) :nth-child(n):nth-child(-n + 1) {
+  background-color: rgba(101, 97, 158, 0.664);
+}
+tr:nth-child(-n + 1) :nth-child(n):nth-child(-n + 1) {
+  background-color: rgba(249, 253, 9, 0.808);
+}
