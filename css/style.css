@@ -7,17 +7,70 @@ table {
   background-color: white;
   width: 40rem;
   height: 20rem;
-  position: absolute;
+  margin-top: 15em;
+  margin-left: 25em;
 }
-tr:nth-child(n + 2) :nth-child(n + 13) {
-  background-color: rgb(218, 154, 94);
-}
-tr:nth-child(n + 3) :nth-child(n + 13):nth-child(-n + 15) {
-  background-color: rgb(223, 166, 218);
+tr td {
+  height: 3rem;
+  width: 3rem;
+  padding: 1em;
+  border-radius: 10%;
 }
 
+tr:nth-child(n + 2) :nth-child(n + 14) {
+  background-color: rgba(249, 253, 9, 0.808);
+}
+
+tr:nth-child(n + 2) :nth-child(n + 13):nth-child(-n + 13) {
+  background-color: rgb(218, 154, 94);
+}
+tr:nth-child(3) td:nth-child(14) {
+  background-color: rgb(218, 154, 94);
+}
+tr:nth-child(4) td:nth-child(14) {
+  background-color: rgb(218, 154, 94);
+}
+tr:nth-child(4) td:nth-child(15) {
+  background-color: rgb(218, 154, 94);
+}
+tr:nth-child(5) td:nth-child(15) {
+  background-color: rgb(218, 154, 94);
+}
+tr:nth-child(5) td:nth-child(16) {
+  background-color: rgb(218, 154, 94);
+}
+tr:nth-child(6) td:nth-child(16) {
+  background-color: rgb(218, 154, 94);
+}
+
+tr:nth-child(n + 3) :nth-child(n + 13):nth-child(-n + 13) {
+  background-color: rgb(223, 166, 218);
+}
+tr:nth-child(n + 5) :nth-child(n + 13):nth-child(-n + 14) {
+  background-color: rgb(223, 166, 218);
+}
+tr:nth-child(6) td:nth-child(15) {
+  background-color: rgb(223, 166, 218);
+}
+tr:nth-child(-n + 6) :nth-child(n + 18) {
+  background-color: rgb(180, 104, 196);
+}
+tr:nth-child(7) td:nth-child(16) {
+  background-color: rgb(180, 104, 196);
+}
+
+tr:nth-child(7) td:nth-child(18) {
+  background-color: rgba(223, 187, 146, 0.808);
+}
 tr:nth-child(n + 4) :nth-child(n + 2):nth-child(-n + 12) {
   background-color: rgb(16, 97, 16);
+}
+tr:nth-child(7) td:nth-child(15) {
+  background-color: rgb(165, 98, 36);
+}
+
+tr:nth-child(7) td:nth-child(17) {
+  background-color: rgba(101, 97, 158, 0.664);
 }
 
 tr:nth-child(n + 6) :nth-child(-n + 3):nth-child(n + 3) {
@@ -29,15 +82,23 @@ tr:nth-child(n + 7) :nth-child(-n + 3):nth-child(n + 3) {
 tr:nth-child(n + 8) :nth-child(n) {
   background-color: white;
 }
+
 tr:nth-child(-n + 7) :nth-child(-n + 2):nth-child(-n + 3) {
   background-color: rgba(223, 187, 146, 0.808);
 }
 tr:nth-child(-n + 1) :nth-child(-n + 2):nth-child(-n + 3) {
   background-color: white;
 }
+tr:nth-child(-n + 6) :nth-child(17) {
+  background-color: rgb(165, 98, 36);
+}
+tr:nth-child(1) td:nth-child(17) {
+  background-color: white;
+}
 tr:nth-child(-n + 7) :nth-child(n):nth-child(-n + 1) {
   background-color: rgba(101, 97, 158, 0.664);
 }
+
 tr:nth-child(-n + 1) :nth-child(n):nth-child(-n + 1) {
   background-color: rgba(249, 253, 9, 0.808);
 }
@@ -49,4 +110,13 @@ tr:nth-child(n + 8) :nth-child(n + 2):nth-child(-n + 15) {
 }
 tr:nth-child(n + 9) :nth-child(n + 2):nth-child(-n + 15) {
   background-color: rgb(22, 119, 126);
+}
+
+tr td:hover {
+  filter: drop-shadow(10%);
+  transform: scale(2.2);
+  cursor: pointer;
+  opacity: 1;
+  z-index: 1;
+  opacity: 0.8;
 }
